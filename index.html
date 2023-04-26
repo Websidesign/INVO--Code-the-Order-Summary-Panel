@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<body>
+  <div id="home-page">
+    <div class="checkout-card-component">
+      <h4 class="checkout-card-component--heading">Order summary</h4>
+      <h5 class="checkout-card-component--subheading">Check if your order matches</h5>
+      <!-- Item -->
+      <div class="checkout-card-component--item-container">
+        <div class="checkout-card-component--image-container">
+          <img src="./assets/images/spotify-logo.svg" alt="Spotify logo">
+        </div>
+        <div class="checkout-card-component--item-info-container">
+          <h6 class="checkout-card-component--item-info-name">Individual</h6>
+          <span class="checkout-card-component--item-info-quantity">1 account</span>
+        </div>
+        <div class="checkout-card-component--item-price-container">
+          <span class="checkout-card-component--item-price">$10.00</span>
+          <span class="checkout-card-component--item-price-description">/month</span>
+        </div>
+      </div>
+      <hr class="checkout-card-component--hr">
+      <!-- Summary -->
+      <div class="checkout-card-component--summary-container">
+        <p class="checkout-card-component--summary">Product summary: </p>
+        <div class="checkout-card-component--item-price-container">
+          <span class="checkout-card-component--summary-price">$10.00</span>
+          <span class="checkout-card-component--summary-price-description">/month</span>
+        </div>
+      </div>
+      <!-- Total -->
+      <div class="checkout-card-component--total-container">
+        <p class="checkout-card-component--total">Total: </p>
+        <div class="checkout-card-component--item-price-container">
+          <span class="checkout-card-component--total-price">$10.00</span>
+          <span class="checkout-card-component--total-price-description">/month</span>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="checkout-card-component--button-container">
+        <div class="checkout-card-component--primary-button-container">
+          <button class="btn-primary" data-loading="0">
+            <span class="button-text">Confirm and pay</span>
+            <div class="btn--loader">
+                <img src="/assets/icons/spinner.svg" alt="Loading..." />
+            </div>
+          </button>
+        </div>
+        <div class="checkout-card-component--secondary-button-container">
+          <button class="btn-secondary" data-loading="0">
+            <span class="button-text">Cancel order</span>
+            <div class="btn--loader">
+                <img src="/assets/icons/spinner.svg" alt="Loading..." />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/global-scripts/main.js"></script>
+  <script type="module" src="/src/pages/home-page/home-page.js"></script>
+</body>
+
+</html>

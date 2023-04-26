@@ -1,0 +1,187 @@
+
+$_450: 450px;
+
+.checkout-card-component {
+   max-width: 520px;
+   width: 100%;
+   //    height: 550px;
+   background-color: var(--background-color);
+   padding: 40px;
+   border-radius: 24px;
+   &--heading {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.1em;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--text-color);
+      letter-spacing: -0.3px;
+   }
+   &--subheading {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 110%;
+      opacity: 0.5;
+      color: var(--text-color);
+      margin-top: 0;
+      margin-bottom: 40px;
+   }
+   &--item-container {
+      display: flex;
+      .checkout-card-component--image-container {
+         width: 80px;
+         height: 80px;
+         background-color: var(--color-content-200);
+         padding: 20px;
+         border-radius: 16px;
+         .checkout-card-component--image{
+            width: 40px;
+            height: 40px;
+         }
+      }
+      .checkout-card-component--item-info-container {
+         padding-top: 18.5px;
+         margin-left: 16px;
+         flex: 1;
+         .checkout-card-component--item-info-name {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 1.1em;
+            letter-spacing: -0.3px;
+            margin: 0;
+            margin-bottom: 8px;
+         }
+         .checkout-card-component--item-info-quantity {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.1em;
+            opacity: .5;
+         }
+      }
+      .checkout-card-component--item-price-container {
+         margin-top: 18.5px;
+         .checkout-card-component--item-price{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.1em;
+            margin-right: 4px;
+         }
+         .checkout-card-component--item-price-description {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.1em;
+            text-align: right;
+            opacity: .5;
+         }
+      }
+   }
+   &--hr{
+      height: 1px;
+      background: var(--color-content-500);
+      margin: 24px 0;
+   }
+   &--summary-container {
+      display: flex;
+      margin-bottom: 22px;
+      .checkout-card-component--summary{
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 1.1em;
+         opacity: 0.5;
+         margin: 0;
+         flex: 1;
+      }
+      .checkout-card-component--summary-price{
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 110%;
+         text-align: right;
+         margin-right: 4px;
+      }
+      .checkout-card-component--summary-price-description{
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 1.1em;
+         text-align: right;
+         opacity: 0.5;
+      }
+   }
+   &--total-container {
+      display: flex;
+      margin-bottom: 50px;
+      .checkout-card-component--total{
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 1.1em;
+         margin: 0;
+         flex: 1;
+      }
+      .checkout-card-component--total-price{
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 1.1em;
+         text-align: right;
+         margin-right: 4px;
+      }
+      .checkout-card-component--total-price-description{
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 1.1em;
+         opacity: 0.5;
+      }
+   }
+   &--button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+   }
+}
+
+
+
+@media only screen and (max-width: $_450) {
+   .checkout-card-component {
+      height: 100vh;
+      border-radius: 0;
+      display: flex;
+      padding: 40px 32px;
+      flex-direction: column;
+      &--item-container {
+         flex: 1;
+         .checkout-card-component--item-info-container {
+            .checkout-card-component--item-info-name {
+               margin-bottom: 6px;
+            }
+
+         }
+      }
+      &--button-container {
+         gap: 12px;
+      }
+   }
+}
+
